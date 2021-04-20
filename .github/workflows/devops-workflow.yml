@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  RESOURCEGROUPNAME: "secret-store-csi-aks-akv-rg"
+  RESOURCEGROUPNAME: "Digital_AgPlatform"
   LOCATION: "East US"
   KEYVAULTNAME: "secretstorecsiakv"
   IMAGENAME: "secretstorecsiaksakv86bb"
@@ -18,7 +18,7 @@ env:
   CLUSTERLOCATION: "East US"
   AGENTCOUNT: "3"
   AGENTVMSIZE: "Standard_DS2_v2"
-  KUBERNETESVERSION: 1.17.13
+  KUBERNETESVERSION: 1.18.14
   OMSLOCATION: "East US"
   OMSWORKSPACENAME: "secretstorecsiaksakv6b56"
   HTTPSAPPLICATIONROUTINGENABLED: false
