@@ -8,19 +8,19 @@ on:
 env:
   RESOURCEGROUPNAME: "Digital_AgPlatform"
   LOCATION: "East US"
-  KEYVAULTNAME: "secretstorecsiakv"
+  KEYVAULTNAME: "secretstorecsiakv88"
   IMAGENAME: "secretstorecsiaksakv86bb"
   REGISTRYSKU: "Standard"
-  REGISTRYNAME: "secretstorecsiaksakvacr"
+  REGISTRYNAME: "secretstorecsiaksakvacr88"
   REGISTRYLOCATION: "South Central US"
-  CLUSTERNAME: "secret-store-csi-aks-akv"
+  CLUSTERNAME: "secret-store-csi-aks-akv88"
   APPINSIGHTSLOCATION: "East US"
   CLUSTERLOCATION: "East US"
   AGENTCOUNT: "3"
   AGENTVMSIZE: "Standard_DS2_v2"
   KUBERNETESVERSION: 1.18.14
   OMSLOCATION: "East US"
-  OMSWORKSPACENAME: "secretstorecsiaksakv6b56"
+  OMSWORKSPACENAME: "secretstorecsiaksakv6b5688"
   HTTPSAPPLICATIONROUTINGENABLED: false
   KUBERNETESAPI: "apps/v1"
   NAMESPACE: "secretstorecsiaksakvaa86"
