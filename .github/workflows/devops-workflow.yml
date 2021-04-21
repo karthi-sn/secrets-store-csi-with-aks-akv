@@ -143,13 +143,13 @@ jobs:
            echo "::set-output name=acr_password::`az acr credential show -n ${{ env.REGISTRYNAME }} --query passwords[0].value | xargs`"
            echo "::add-mask::`az acr credential show -n ${{ env.REGISTRYNAME }} --query passwords[0].value | xargs`"
 
-    - uses: azure/k8s-create-secret@v1
-      with:
-        namespace: ${{ env.NAMESPACE }}
-        container-registry-url: ${{ env.REGISTRYNAME }}.azurecr.io
-        container-registry-username: ${{ steps.getACRCred.outputs.acr_username }}
-        container-registry-password: ${{ steps.getACRCred.outputs.acr_password }}
-        secret-name: ${{ env.CLUSTERNAME }}dockerauth
+#     - uses: azure/k8s-create-secret@v1
+#       with:
+#         namespace: ${{ env.NAMESPACE }}
+#         container-registry-url: ${{ env.REGISTRYNAME }}.azurecr.io
+#         container-registry-username: ${{ steps.getACRCred.outputs.acr_username }}
+#         container-registry-password: ${{ steps.getACRCred.outputs.acr_password }}
+#         secret-name: ${{ env.CLUSTERNAME }}dockerauth
 
     - name: Fetch Application insights key
       id: GetAppInsightsKey
